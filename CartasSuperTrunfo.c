@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 //Criando as cartas
 int main() 
 {   
@@ -198,8 +197,8 @@ int main()
      soma2 = valor1_c2 + valor2_c2;
 
      //Resultado final
-     printf("------------ Resultado Final ----------\n");
-     printf("%s (Carta 1) e %s (Carta 2)\n", paises, paises2);
+     printf("\n------------ Resultado Final ----------\n");
+     printf("%s (Carta 1) e %s (Carta 2)\n\n", paises, paises2);
      printf("Atributos escolhidos: \n");
      printf("- Primeiro atributo:\n");
      if (atributo1 == 1)//Mostra o atributo e valor 
@@ -246,7 +245,7 @@ int main()
           printf("Super Poder: %.2f\n", valor1_c2); 
       }
  
-      printf("- Segundo atributo:\n");
+      printf("\n- Segundo atributo:\n");
       if (atributo2 == 1)
      {
            printf("Carta 1:\n");
@@ -298,13 +297,13 @@ int main()
      //Mostra a carta vencedora
      if (soma1 > soma2) 
      {
-           printf("\n*** Carta 1 (%s) venceu! ***", paises);
+           printf("*** Carta 1 (%s) venceu! ***", paises);
      } else if (soma1 == soma2)
      {
-           printf("\n*** EMPATE ***!");  
+           printf("*** EMPATE ***!");  
      } else 
      {
-           printf("\n*** Carta 2 (%s) venceu! \n", paises2);
+           printf("*** Carta 2 (%s) venceu! \n", paises2);
      }
    }
      return 0;
